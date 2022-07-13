@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/call_navigation"
+    app:startDestination="@id/call_list">
+    <fragment
+        android:id="@+id/call_list"
+        android:name="com.dotsdev.idcaller.presentation.main.calltab.CallListFragment"
+        android:label="StatusFragment"
+        tools:layout="@layout/fragment_call_list">
+        <action
+            android:id="@+id/open_dialpad"
+            app:destination="@id/dial_numpad" />
+        <action
+            android:id="@+id/open_detail_call"
+            app:destination="@id/nav_call_detail">
+            <argument
+                android:name="navigationGraphInfo"
+                app:argType="com.dotsdev.idcaller.data.model.NavigationGraphInfo" />
+        </action>
+    </fragment>
+
+    <dialog
+        android:id="@+id/dial_numpad"
+        android:name="com.dotsdev.idcaller.presentation.main.calltab.dial.DialNumpadDialog"
+        android:label="DialNumpad"
+        tools:layout="@layout/dialog_dialpad" />
+
+    <activity
+        android:id="@+id/nav_call_detail"
+        android:name="com.dotsdev.idcaller.presentation.template.NormalAppbarActivity"
+        tools:layout="@layout/activity_common">
+        <argument
+            android:name="navigationGraphInfo"
+            app:argType="com.dotsdev.idcaller.data.model.NavigationGraphInfo" />
+    </activity>
+</navigation>

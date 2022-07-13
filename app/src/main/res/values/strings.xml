@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Caller</string>
+    <string name="contact">Contact</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="search_any_things">Search any things</string>
+    <string name="important">Important</string>
+    <string name="spam">Spam</string>
+    <string name="inbox">Inbox</string>
+    <string name="ok">ok</string>
+    <string name="numpad_0"><font size="20">0</font>\t<font size="10">+</font></string>
+    <string name="numpad_1"><font size="20">1</font>\t<font size="10"> ➿</font></string>
+    <string name="numpad_2"><font size="20">2</font>\t<font size="10">ABC</font></string>
+    <string name="numpad_3"><font size="20">3</font>\t<font size="10">DEF</font></string>
+    <string name="numpad_4"><font size="20">4</font>\t<font size="10">GHI</font></string>
+    <string name="numpad_5"><font size="20">5</font>\t<font size="10">JKL</font></string>
+    <string name="numpad_6"><font size="20">6</font>\t<font size="10">MNO</font></string>
+    <string name="numpad_7"><font size="20">7</font>\t<font size="10">PQRS</font></string>
+    <string name="numpad_8"><font size="20">8</font>\t<font size="10">TUV</font></string>
+    <string name="numpad_9"><font size="20">9</font>\t<font size="10">WXYZ</font></string>
+    <string name="numpad_star"><font size="20">*</font>\t</string>
+    <string name="numpad_hashtag"><font size="20">#</font>\t</string>
+    <string name="reply_not_supported">Reply is not supported by this sender</string>
+    <string name="aa">Aa</string>
+    <string name="txt_first_name">First Name</string>
+    <string name="txt_last_name">Last Name</string>
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="txt_add_second_phone_number">Add second phone number</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_country">Country</string>
+    <string name="txt_enter_phone_number">Enter your second phone number</string>
+    <string name="txt_your_country">Your Country</string>
+    <string name="txt_enter_your_phone_number">Enter your phone number</string>
+    <string name="txt_continue">CONTINUE</string>
+    <string name="txt_second_phone_number">Second Phone Number</string>
+    <string name="txt_call_history">Call History</string>
+    <string name="txt_view_all">VIEW ALL</string>
+    <string name="txt_calling">Calling...</string>
+
+    <string name="reply_label">Reply</string>
+    <string name="txt_allow_blocking">Allow blocking</string>
+    <string name="txt_you_need_to_set_idcaller_as_your_default_dialer_for_blocking_to_work">You need to set IdCaller as your default dialer for blocking to work</string>
+    <string name="txt_set_as_default_dialer">SET AS DEFAULT DIALER</string>
+    <string name="txt_block_spam_message">Block spam message</string>
+    <string name="txt_blocking">Blocking</string>
+    <string name="txt_block_a_number">Block a number</string>
+    <string name="txt_number">Number</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_block">Block</string>
+    <string name="txt_block_spam_number">Block spam number</string>
+
+</resources>

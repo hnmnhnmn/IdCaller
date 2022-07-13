@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_message"
+        android:icon="@drawable/ic_baseline_call"
+        app:showAsAction="ifRoom"
+        android:title="@string/call" />
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"
+        android:title="@string/contact" />
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@drawable/ic_baseline_block_24"
+        android:title="@string/txt_block" />
+</menu>

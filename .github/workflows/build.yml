@@ -1,0 +1,38 @@
+name: Bump version & deploy
+
+on:
+  push:
+    branches:
+      - master
+env:
+  BUILD_FLAVOR: "Debug"
+  DEPLOYGATE_OWNER: "huyhuynh88097"
+  DEPLOYGATE_API_TOKEN: "3c096495-8613-444c-8b44-7e8131d06bf4"
+jobs:
+  setup:
+    name: Build And Deploy APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Bump version
+        id: bump_version
+        uses: oflynned/Android-Semantic-Release@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          build_number: ${{ github.run_number }}
+
+      - uses: gradle/gradle-build-action@v2
+
+      - name: Build with Gradle
+        run: ./gradlew assemble${{ env.BUILD_FLAVOR }}
+
+      - name: Deploy APK
+        uses: jmatsu/dg-upload-app-action@v0.2
+        with:
+          app_owner_name: ${{ env.DEPLOYGATE_OWNER }}
+          api_token: ${{ env.DEPLOYGATE_API_TOKEN }}
+          app_file_path: app/build/outputs/apk/debug/app-debug.apk
+
